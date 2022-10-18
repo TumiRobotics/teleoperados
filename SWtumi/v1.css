@@ -102,3 +102,8 @@ html,body {
     color: white;
     font-weight: bold;
 }
+
+progress {
+    accent-color: #5dc1b9;
+    height: 20px;
+}

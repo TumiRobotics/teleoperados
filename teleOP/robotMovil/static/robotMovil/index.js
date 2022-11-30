@@ -8,8 +8,8 @@ function mostrarVideo()
 
     if(btnControlVideo.dataset.info === '0')
     {
-        videoCam1.innerHTML = `<img src="http://127.0.0.1:8080/?action=stream">`
-        videoCam2.innerHTML = `<img src="http://127.0.0.1:8080/?action=stream">`
+        videoCam1.innerHTML = `<img src="http://10.100.178.237:8080/?action=stream">`
+        videoCam2.innerHTML = `<img src="http://10.100.178.237:8085/?action=stream">`
         btnControlVideo.dataset.info = '1'
         btnControlVideo.innerHTML = 'Detener grabacion'
     }
@@ -56,4 +56,9 @@ document.addEventListener('DOMContentLoaded',()=>{
         console.log('Gamepad ha sido desconectado')
         clearInterval(infoGamepad)
     })
+
 })
+
+setInterval(()=>{
+    console.log('Mensaje recurrente')
+},1000)

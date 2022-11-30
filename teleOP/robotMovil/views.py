@@ -6,6 +6,11 @@ serialRobot = serial.Serial('/dev/ttyACM0',115200,timeout=0.5)
 comandos = {'0':'a','1':'A','2':'B','3':'r','4':'l','5':'A','6':'A','7':'A','8':'A','9':'A'}
 
 # Create your views here.
+def verificarConexion(request):
+    return JsonResponse({
+    	'resp':'ok'
+    })
+
 def index(request):
     return render(request,'robotMovil/index.html')
 
